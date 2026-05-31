@@ -1,0 +1,4 @@
+# .gitignore for PlayerScope
+
+# Python
+__pycache__/
