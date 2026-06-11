@@ -8,11 +8,11 @@ Audio Player/Recorder with Oscilloscope and Spectrum Analyzer for Raspberry Pi 3
 
 ## Description
 
-I needed an audio player with oscilloscope and spectrum display to run on my Raspberry Pi.  Having failed to find one that worked on the web, I tried to "vibe code" one using AI.  When this didn't work either I ended up writing one myself.  (Bits of the GUI and the soundfile support are still by AI; the rest is human coded.)  I'm putting it on GitHub in case it's useful to anyone else.  But please note that it doesn't currently (30/5/26) work on Pi Debian Trixie; this appears to be due to problems with pyaudio support on Trixie.  It seems to be fine on Debian Bookworm.
+I needed an audio player with oscilloscope and spectrum display to run on my Raspberry Pi.  Having failed to find one that worked on the web, I tried to "vibe code" one using AI.  When this didn't work either I ended up writing one myself.  (Bits of the GUI and the soundfile support are still by AI; the rest is human coded.)  I'm putting it on GitHub in case it's useful to anyone else.  
 
 ## Installing
 
-To install on Debian Bookwork using pydub for audio load and save use install_bookworm.sh.  To attempt to run on Trixie using soundfile for load and save (because pydub doesn't work) try install_trixie.sh, but expect problems (because pyaudio doesn't work either).
+To install on Debian Bookwork using pydub for audio load and save use install_bookworm.sh.  To install on Trixie using soundfile for load and save (because pydub doesn't work) use install_trixie.sh.
 
 ## Executing program
 
@@ -20,7 +20,7 @@ Use run.sh
 
 ## Limitations
 
-See the comments above regarding issues with pyaudio on Trixie.  I don't think this is PlayerScope's fault, as the elementary program audiotest.py works following first installation of pyaudio on Trixie, but fails following a Pi reboot.  Please let me know if you know a work-round for this!
+When I put PlayerScope on GitHub on 30/5/26, it wasn't working on Trixie; this appeared to be due to problems with pyaudio support.  Having reinstalled Trixie from scratch on 11/06/26, it now appears to be working, though there remains an issue of audio output not being redirected to Bluetooth when this is set up on the desktop.  It remains fine on Debian Bookworm.
 
 ## Documentation
 
