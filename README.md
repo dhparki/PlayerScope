@@ -28,7 +28,7 @@ Inline in the code
 
 ## Authors
 
-Dave Parkinson, davep@dhparki.com
+Dave Parkinson, dhparki@outlook.com
 
 ## Version History
 

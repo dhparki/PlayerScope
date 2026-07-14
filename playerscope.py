@@ -1,7 +1,7 @@
 """ Entry Point and Main Application Window for PlayerScope V0.5
     GUI code originally by GitHub AI, substantially rewritten by DaveP April-May 26
     Oscilloscope and Spectrum Analyser using pyqtgraph added by DaveP
-    Dave Parkinson, davep@dhparki.com
+    Dave Parkinson, dhparki@outlook.com
     Requires sudo apt install python3-pyqtgraph
 """
 
@@ -489,6 +489,7 @@ class PlayerScope(QMainWindow):
         self.spectrum.setYRange(0, self.spectrum_ymax * (100-value) // 100, padding=0)  
 
     def rec_buttons(self, enabled):
+        """Enable record buttons according to list [monitor, rec/pause, stop]"""
         self.rec_monitor_button.setEnabled(enabled[0])
         self.record_pause_button.setEnabled(enabled[1])
         self.rec_stop_button.setEnabled(enabled[2])

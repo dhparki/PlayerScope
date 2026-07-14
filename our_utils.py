@@ -1,5 +1,5 @@
 """ Misc Python utilities,  DaveP April-May 26
-    Dave Parkinson, davep@dhparki.com
+    Dave Parkinson, dhparki@outlook.com
 """
 
 import os

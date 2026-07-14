@@ -1,5 +1,5 @@
 """ PlayerScope audio player using pyaudio, and pydub or soundfile, DaveP V0.5 April-May 26
-    Original using pydub by Dave Parkinson, davep@dhparki.com
+    Original using pydub by Dave Parkinson, dhparki@outlook.com
     Modified to use soundfile instead of pydub to support Python 3.13 by GitHub AI
     AI bugs fixed, merged, simplified and speeded up by DaveP.
 
